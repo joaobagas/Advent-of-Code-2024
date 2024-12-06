@@ -3,6 +3,7 @@ package main
 import (
 	"AoC2024/day1"
 	"AoC2024/day2"
+	"AoC2024/day3"
 	"fmt"
 )
 
@@ -22,6 +23,7 @@ func main() {
 		day1.CalculateOcurences()
 	case "2":
 		day2.CalculateSafeReports()
+	case "3":
+		day3.CalculateMultiplications()
 	}
-
 }

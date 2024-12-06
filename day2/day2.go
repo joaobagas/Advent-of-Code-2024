@@ -25,7 +25,7 @@ func CalculateSafeReports() {
 		works := EvalLine(valueList)
 		if !works {
 			for i := 0; i < len(valueList); i++ {
-				newList := rmvElementFromArray(valueList, i)
+				newList := RmvElementFromArray(valueList, i)
 				if EvalLine(newList) {
 					safeDamp += 1
 					break
@@ -67,7 +67,7 @@ func EvalLine(valueList []string) bool {
 	return true
 }
 
-func rmvElementFromArray(oldArray []string, el int) []string {
+func RmvElementFromArray(oldArray []string, el int) []string {
 	var newArray []string
 	for i := 0; i < len(oldArray); i++ {
 		if i != el {
